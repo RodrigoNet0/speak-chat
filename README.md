@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Speak Chat
 
-## Getting Started
+Speak Chat é um chatbot integrado ao ChatGPT, desenvolvido com Next.js, NextAuth e Tailwind CSS.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js** - Framework React para desenvolvimento web.
+- **NextAuth** - Autenticação segura e fácil de implementar.
+- **Tailwind CSS** - Estilização rápida e responsiva.
+- **OpenAI API** - Integração com o ChatGPT para respostas inteligentes.
+
+## Funcionalidades
+
+- Autenticação de usuários com NextAuth.
+- Interface responsiva e moderna com Tailwind CSS.
+- Integração com a API da OpenAI para respostas dinâmicas.
+- Histórico de conversações.
+
+## Como Executar o Projeto
+
+### 1. Clone o Repositório
+```sh
+  git clone https://github.com/seu-usuario/speak-chat.git
+  cd speak-chat
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Instale as Dependências
+```sh
+  npm install
+  # ou
+  yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Configure as Variáveis de Ambiente
+Crie um arquivo `.env.local` na raiz do projeto e adicione as seguintes variáveis:
+```sh
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=seu_segredo
+OPENAI_API_KEY=sua_chave_da_openai
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Inicie o Servidor de Desenvolvimento
+```sh
+  npm run dev
+  # ou
+  yarn dev
+```
 
-## Learn More
+O projeto estará disponível em `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribuição
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sinta-se à vontade para contribuir com melhorias e novas funcionalidades! Para isso:
+1. Fork o repositório
+2. Crie uma branch (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Envie um push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Licença
 
-## Deploy on Vercel
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Desenvolvido por [Seu Nome](https://github.com/RodrigoNet0) 🚀
